@@ -31,6 +31,8 @@ public class PercyMobileWeb {
 	    AndroidDriver driver = new AndroidDriver(new URI("http://127.0.0.1:4725").toURL(), options);
 	    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+	    System.setProperty("PERCY_TOKEN", "web_c5685c845846d3d9d32387a9dfdc80031696c2d556770275da66b5588bd004d2");
+	       System.setProperty("PERCY_BRANCH", "web-demo");
 	    AppPercy percy = new AppPercy(driver);
 	    
 	    //Percy Screenshot function which captures and uploads screenshot to percy

@@ -8,9 +8,6 @@ import org.testng.annotations.Test;
 import io.percy.selenium.Percy;
 
 
-
-
-
 public class PercyAppiumTest {
     WebDriver driver;
     Percy percy;
